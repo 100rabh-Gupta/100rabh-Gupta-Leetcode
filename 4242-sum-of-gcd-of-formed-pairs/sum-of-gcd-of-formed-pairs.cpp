@@ -1,11 +1,6 @@
 class Solution {
 public:
-int gcd(int a,int b){
-     if ( a<b)swap(a,b);
 
-     if (b==0)return a;
-     return gcd(b,a%b);
-}
     long long gcdSum(vector<int>& nums) {
         int mx= INT_MIN;
         vector<int>gcdmax;
