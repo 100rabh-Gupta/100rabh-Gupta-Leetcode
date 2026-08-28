@@ -12,6 +12,7 @@
 class Solution {
 public:
     void flatten(TreeNode* root) {
+      
        while(root){ 
     while(root->left){
         TreeNode*cur=root->left;
