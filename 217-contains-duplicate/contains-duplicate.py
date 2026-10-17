@@ -3,9 +3,7 @@ class Solution:
         feq={}
         for x in nums:
             feq[x]=feq.get(x,0)+1
-        if(len(feq)==len(nums)):
-            return False
-        else:
-            return True
+        return(len(feq)<len(nums))
+           
         
         
