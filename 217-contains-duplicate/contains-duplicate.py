@@ -1,9 +1,9 @@
 class Solution:
     def containsDuplicate(self, nums: list[int]) -> bool:
-        feq={}
+        s=set()
         for x in nums:
-            feq[x]=feq.get(x,0)+1
-        return(len(feq)<len(nums))
+            s.add(x)
+        return(len(s)<len(nums))
            
         
         
