@@ -16,11 +16,10 @@ public:
     }
     
     int getProduct(int k) {
-       int n= prefix.size();
-         if (k >= n)
-            return 0;
+       if (k >= (int)prefix.size()) return 0;
+       
 
-       return prefix.back()/prefix[n-k-1];
+       return prefix.back() / prefix[prefix.size() - 1 - k];
         
     }
 };
